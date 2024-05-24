@@ -1,21 +1,22 @@
-body {
-	max-width: 1920px;
-	margin: auto;
-}
 * {
 	font-family: 'Inter';
 	font-style: normal;
 }
+
+body {
+	margin: auto;
+	max-width: 1920px;
+}
+
 .top-header {
+	align-items: center;
 	background-color: white;
-	position: sticky;
-	top:0;
-	z-index: 1000;
 	display: flex;
 	justify-content: space-between;
-	padding-inline: 100px;
 	padding-block: 30px;
-	align-items: center;
+	padding-inline: 100px;
+	position: sticky;
+	z-index: 1000;
 }
 
 .top-header .name {
@@ -24,8 +25,8 @@ body {
 
 .nav ul {
 	display: flex;
-	list-style-type: none;
 	font-size: 14px;
+	list-style-type: none;
 	margin-bottom: 0;
 }
 
@@ -34,8 +35,8 @@ body {
 }
 
 .nav a {
+	color: #000;
 	text-decoration: none;
-	color: #000
 }
 
 .social-link img {
@@ -43,10 +44,10 @@ body {
 }
 
 #about {
-	display: flex;
 	background-color: #F6D2B8;
-	padding-inline: 100px;
+	display: flex;
 	padding-block: 100px;
+	padding-inline: 100px;
 	position: relative;
 }
 
@@ -79,46 +80,50 @@ body {
 	margin-bottom: 60px;
 	font-size: 30px;
 }
+
 .about-me__introduction {
 	font-family: 'Spectral';
-	font-weight: 800;
 	font-style: italic;
+	font-weight: 800;
 	width: 60%;
 }
 #about-me p {
-	width: 80%;
 	font-size: 14px;
+	width: 80%;
 }
 
-#gallery {
-	/*	min-height: 100vh; */
-}
-.title{
-	text-align: center;
+.title {
 	padding-block: 2em;
+	text-align: center;
 }
+
 .gallery .nav {
 	justify-content: center;
 }
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
 	background-color: #BEB45A;
 	border-radius:0 ;
+	color: #000;
+	font-weight: bold;
 }
+
 .nav-pills .nav-link {
 	color: #000
 }
+
 .item-column {
 	position: relative;
 	margin-bottom: 0 !important;
 	padding: 0;
 }
+
 .item-column::after{
 	content: "";
 	display: block;
 	padding-bottom: 100%;
-
 }
+
 .gallery-item {
 	position: absolute;
 	width: 100%;
@@ -188,6 +193,10 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	z-index: 1;
+}
+
+.service .service__price p {
+	font-size: 23px;
 }
 
 #contact {
